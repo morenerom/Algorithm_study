@@ -13,8 +13,7 @@ int main() {
 		v[num] = num + 1;
 	while (m--) {
 		cin >> i >> j;
-		for (l = i, r = j; l <= r; l++, r--)
-			swap(v[l - 1], v[r - 1]);
+		reverse(v.begin() + i - 1, v.begin() + j);
 	}
 	for (int num = 0; num < n; num++) {
 		cout << v[num];
