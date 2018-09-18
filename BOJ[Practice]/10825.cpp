@@ -31,6 +31,8 @@ bool cmp(student a, student b) {
 }
 
 int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 	int n;
 	cin >> n;
 	student std[100002];
@@ -40,7 +42,7 @@ int main() {
 	sort(std, std + n, cmp);
 
 	for (int i = 0; i < n; i++)
-		cout << std[i].name << endl;
+		cout << std[i].name << '\n';
 
 	return 0;
 }
