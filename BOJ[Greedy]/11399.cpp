@@ -12,10 +12,8 @@ int main() {
 	for (int i = 0; i < N; i++)
 		cin >> t[i];
 	sort(t.begin(), t.end());
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j <= i; j++)
-			sum += t[j];
-	}
+	for (int i = 0; i < N; i++)
+			sum += t[i]*(N-i);
 	cout << sum << '\n';
 	return 0;
 }
