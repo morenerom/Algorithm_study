@@ -6,10 +6,7 @@ int n;
 
 void solve(int x, int y, int n,int s) {
 	if (n == 1) {
-		if (s == 1)
-			v[x][y] = '*';
-		else
-			v[x][y] = ' ';
+		v[x][y] = '*';
 		return;
 	}
 	int m = n / 3;
